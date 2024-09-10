@@ -55,5 +55,3 @@ The overall accuracy across different conditions is **94%**.
 ## Conclusion
 This paper shows that a single camera can accurately measure the distance between vehicles in an autonomous car system. By doing so, it reduces the need for expensive and complex sensors like lidar and radar, making it a cost-effective solution for real-time vehicle distance measurement.
 
-### Future Work:
-Future experiments will explore further improvements in image processing and the integration of this method into fully autonomous driving systems.
