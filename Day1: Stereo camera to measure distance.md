@@ -35,3 +35,30 @@ Recent studies have explored using various vision sensors to measure object dist
 - **Error Reduction in Stereo Camera Systems**: Research has focused on reducing errors caused by camera movement in stereo setups. A real-time motion estimation technique was used to correct alignment errors, ensuring accurate 3D data even when the cameras shift.
 
 - **Visual Ego-Motion Estimation for Self-Driving Cars**: A study on estimating a self-driving car's movement using multiple cameras showed that a mathematical method could accurately calculate the car's full movement (direction, speed, etc.). This method was validated with real-world data from a multi-camera system mounted on a car.
+
+- **Using two webcams**: They used image processing techniques in a program written in Matlab to find the distance. However, their method wasn't very accurate and only worked under specific conditions, especially for short distances—anything less than 1.2 meters.
+
+  while current methods for measuring distance are effective, they might not consider all factors that affect accuracy. The proposed method aims to improve this by using stereo vision to provide a more precise measurement by addressing the issues related to lens distance variations.
+
+
+  ## STEREO IMAGE MEASUREMENT METHOD
+
+  The two cameras were positioned on horizontal base with a distance of 15 cm from each 
+  other. The experiment started by allowing the right camera (RC) to take the first picture and 
+  left camera (LC) to take the second picture. In order to improve computational speed, images are converted from RGB to grayscale.
+
+ ![image](https://github.com/user-attachments/assets/f2947a31-bbf5-4a7b-9a01-77deee66653c)
+
+ They use trigonometry to calculate the distance D to the object. The formula is:
+
+ ![image](https://github.com/user-attachments/assets/cdc566ac-4092-4970-a3b7-eaa210816b83)
+
+where,
+ B is the known distance between the two cameras.
+ θ1 and θ2 are the angles the cameras see the object from.
+
+![image](https://github.com/user-attachments/assets/0c42554c-89a7-4358-87d2-6361936f0911)
+
+Result showed that it could detect up to 160 m. In the experiment, B=0.15 is the 15-cm lens distance setup, x0=600 is the pixel width, and is the pixel width, and θ=31.5 is the lens view angle.
+
+
