@@ -71,5 +71,3 @@ Play around with these parameters to adjust how features are detected and tracke
 ## Real-world Applications
 
 - Optical flow can be used to track moving objects like cars on a highway, following their motion trajectory over time.
-- The system efficiently tracks points at high FPS (70-80 FPS) on a CPU, making it suitable for real-time applications.
-
